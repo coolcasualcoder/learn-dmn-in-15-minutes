@@ -7,14 +7,17 @@ Once you know most of the DMN features, you probably want to execute your model 
 
 ### 1) Setup the Kogito REST API
 
-First of all, download all Kogito examples from [github.com/kiegroup/kogito-examples/releases](https://github.com/kiegroup/kogito-examples/releases) , unzip it, open the DMN Quarkus example, and finally run it:
+First of all, clone all Kogito examples from [github.com/apache/incubator-kie-kogito-examples](https://github.com/apache/incubator-kie-kogito-examples) , open the Kogito Quarkus example, and finally run it:
 
 ```
-# Go to the DMN Quarkus example directory:
-cd dmn-quarkus-example
+# Clone the repository
+git clone https://github.com/apache/incubator-kie-kogito-examples.git
+
+# Go to the Kogito Quarkus example directory:
+cd ./incubator-kie-kogito-examples/kogito-quarkus-examples/dmn-quarkus-example
 
 # Run the example:
-mvn clean compile quarkus:dev -DskipTests=true
+mvn clean compile quarkus:dev
 ```
 
 OK! Open the [localhost:8080/swagger-ui](http://localhost:8080/swagger-ui) to check the Swagger UI:
